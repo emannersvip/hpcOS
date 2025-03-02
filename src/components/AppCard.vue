@@ -2,6 +2,7 @@
   <div class="card" :class="{ active: isActive }">
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
+    <li v-for="noded in hpcnodes" :key=noded.id>{{ noded }}</li>
     <button @click="$emit('toggle')">
       {{ isActive ? 'Stop' : 'Start' }}
     </button>
@@ -9,12 +10,14 @@
 </template>
 
 <script>
+/*const itemss = ['apple','orange'];*/
+/*const itemss = [];*/
 export default {
   name: 'AppCard',
   props: {
     name: String,
     description: String,
-    nodes: String,
+    hpcnodes: [],
     isActive: Boolean,
   },
 };

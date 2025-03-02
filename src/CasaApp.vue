@@ -7,7 +7,7 @@
       <AppCard
         name="Login Nodes"
         description="A list of login nodes."
-	nodes='Server1'
+	:hpcnodes='["login1","login2","login3"]'
         :isActive="isAppActive"
         @toggle="toggleApp"
       />
@@ -15,18 +15,20 @@
       <AppCard
         name="Scheduler Nodes"
         description="A list of scheduler nodes."
-	nodes='Scheduler1'
+	:hpcnodes='["scheduler1","scheduler2"]'
         :isActive="isAppActive"
         @toggle="toggleApp"
       />
       <AppCard
         name="Sample App"
         description="A simple app card."
-	nodes=''
         :isActive="isAppActive"
         @toggle="toggleApp"
       />
       <p class="status" v-if="isAppActive">App is running!</p>
+    </main>
+    <main>
+      Bob
     </main>
   </div>
 </template>
