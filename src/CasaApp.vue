@@ -27,9 +27,13 @@
       />
       <p class="status" v-if="isAppActive">App is running!</p>
     </main>
-    <main>
-      Bob
-    </main>
+  <div>
+      <AppCard
+        name="Compute Nodes"
+        description="A list of compute nodes."
+	:hpcnodes='["compute1","compute2","compute3","compute4","compute5","compute6","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3","compute3"]'
+      />
+  </div>
   </div>
 </template>
 
